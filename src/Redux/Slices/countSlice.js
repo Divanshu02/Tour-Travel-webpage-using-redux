@@ -25,11 +25,11 @@ const countSlice = createSlice({
     UNLIKED: (state, action) => {
       state.value -= 1;
       state.toursData[action.payload.id - 1].flag = false;
-      console.log(action.payload.likedArr)
+    //   console.log(action.payload.likedArr)
       let unlikedElements = action.payload.newTours.filter((tour) => {
         return tour.id!==action.payload.id;
       });
-      console.log(unlikedElements,'unliked')
+    //   console.log(unlikedElements,'unliked')
       state.likedArr=[]
       state.likedArr.push(unlikedElements)
     },

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./LikedItems.module.css";
 import { useSelector } from "react-redux";
+import { FaArrowLeft } from "react-icons/fa"; // Import the left arrow icon from Font Awesome
+import { NavLink } from "react-router-dom";
 
 const LikedItems = () => {
   let likedItems = useSelector((state) => state.likedArr);
@@ -10,11 +12,24 @@ const LikedItems = () => {
       tours.push(tour);
     });
   });
-  console.log(tours, "tour");
+  // console.log(tours, "tour");
   // console.log(likedItems)
   return (
     <>
-      <h2 style={{textAlign:'center',fontWeight:'lighter',marginBottom:'2rem'}}>Selected Tours...</h2>
+      <NavLink to='/'>
+        <FaArrowLeft style={{ color: "black", fontSize: "24px" }} />{" "}
+        {/* Apply styling to the icon */}
+      </NavLink>
+
+      <h2
+        style={{
+          textAlign: "center",
+          fontWeight: "lighter",
+          marginBottom: "2rem",
+        }}
+      >
+        Saved Tours...
+      </h2>
       <div className={styles.liked_container}>
         {tours.map((tour) => {
           let { id, name, info, image, price, flag } = tour;
