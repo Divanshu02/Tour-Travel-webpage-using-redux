@@ -1,0 +1,89 @@
+.hdr-btn:hover{
+background-color: rgb(225, 125, 3);
+transition: all;
+transition-duration: .4s;
+color: white;
+}
+
+.random-cont{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 600px;
+    padding: 10px;
+    width: 400px;
+    min-height: fit-content;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    box-shadow: 2px 2px 4px gray ;
+    margin-right: 50px;
+    margin-bottom: 7rem;
+}
+
+
+.innerrandom-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.innerrandom-cont>.tourbtn{
+    cursor: pointer;
+    border: 2px solid black;
+    justify-self: center;
+    padding: 12px;
+    background-color: burlywood;
+
+}
+
+.innerrandom-cont>.tourbtn:hover{
+    background-color: goldenrod;
+
+}
+
+
+.ToursCont{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    gap: 12px;
+}
+
+.ToursContbtn{
+    cursor:pointer;
+    border: 2px solid black;
+    align-self: center;
+    padding: 10px;
+    background-color: burlywood;
+
+
+}
+
+.ToursContbtn:hover{
+    background-color: goldenrod;
+
+}
+
+.ToursCont2{
+    width: 91.666667%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.plancont{
+    background-color: rgb(247, 233, 216);
+    min-height:100%;
+    min-width: 100%;
+}
+ 
+.innerplancont{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 7rem;
+    position: relative;
+    top: 1em;
+}
