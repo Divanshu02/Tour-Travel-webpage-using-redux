@@ -30,6 +30,7 @@ const data = [
       info: "Varanasi is a holy city in northern India, situated on the banks of the sacred river Ganges. The city is a major pilgrimage site for Hindus and is famous for its ancient temples, winding alleyways, and colorful festivals.",
       image: "https://cdn.thecodehelp.in/Varanasi.jpeg",
       price: "31,095",
+      flag:false
     },
     {
       id: 5,
@@ -37,6 +38,7 @@ const data = [
       info: "Starting in the colorful port city of Gdańsk, you'll escape the crowds and embrace the understated elegance of ready-for-prime-time Poland for 10 days. With an expert Rick Steves guide at your side, you'll experience mighty Malbork castle",
       image: "https://cdn.thecodehelp.in/Darjeeling.jpeg",
       price: "78,595",
+      flag:false
     },
     {
       id: 6,
@@ -44,6 +46,7 @@ const data = [
       info: "Jaisalmer is a city in the Indian state of Rajasthan, known for its stunning sandstone architecture and its location in the heart of the Thar Desert. The city is home to several impressive palaces and fortresses, as well as unique cultural traditions and handicrafts.",
       image: "https://cdn.thecodehelp.in/Jaisalmer.jpeg",
       price: "68,595",
+      flag:false
     },
     {
       id: 7,
@@ -51,6 +54,7 @@ const data = [
       info: "Kochi is a port city in the Indian state of Kerala, known for its historic connections to trade and commerce. The city is home to several stunning churches, synagogues, and mosques, as well as a rich culinary tradition that blends Indian, Portuguese, and other influences.",
       image: "https://cdn.thecodehelp.in/Kochi.jpeg",
       price: "68,595",
+      flag:false
     },
   
     {
@@ -59,6 +63,7 @@ const data = [
       info: "Varanasi is a holy city in northern India, situated on the banks of the sacred river Ganges. The city is a major pilgrimage site for Hindus and is famous for its ancient temples, winding alleyways, and colorful festivals.",
       image: "https://cdn.thecodehelp.in/Varanasi.jpeg",
       price: "31,095",
+      flag:false
     }, 
     {
       id: 9,
@@ -66,6 +71,7 @@ const data = [
       info: " Goa is a small state on India's western coast, known for its stunning beaches, vibrant nightlife, and Portuguese-influenced architecture. The state is also known for its spicy seafood dishes and unique cultural traditions.",
       image: "https://cdn.thecodehelp.in/Goa.jpeg",
       price: "29,695",
+      flag:false
     },
   ];
   

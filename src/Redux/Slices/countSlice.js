@@ -13,10 +13,12 @@ const countSlice=createSlice({
     reducers:{
         LIKED:(state,action)=>{
             state.value+=1;
-            // console.log(initialState.toursData)
+            
+          state.toursData[action.payload.id-1].flag=true;
         },
         UNLIKED:(state,action)=>{
             state.value-=1;
+            state.toursData[action.payload.id-1].flag=false;
         },
         LEFTTOURS:(state,action)=>{
             state.toursData=action.payload

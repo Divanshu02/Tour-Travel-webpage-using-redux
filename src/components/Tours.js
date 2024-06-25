@@ -3,12 +3,12 @@ import data from "./data.js";
 import Tour from "./Tour.js";
 import "./Tours.css";
 import { useDispatch, useSelector } from "react-redux";
-import { LEFTTOURS,FILLTOURS } from "../Redux/Slices/countSlice.js";
+import { FILLTOURS } from "../Redux/Slices/countSlice.js";
 
 const Tours = () => {
   const tours=useSelector(state=>state.toursData)
   const dispatch=useDispatch()
-  // console.log(tours)
+  console.log(tours)
 
 /*
   function removeTour(id) {
