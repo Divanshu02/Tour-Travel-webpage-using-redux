@@ -4,7 +4,6 @@ import data from "../../components/data";
 const initialState={
     value:0,
     toursData:data,
-    sliceFlag:false
 }
 
 
@@ -14,20 +13,27 @@ const countSlice=createSlice({
     reducers:{
         LIKED:(state,action)=>{
             state.value+=1;
-            console.log(initialState.toursData)
+            // console.log(initialState.toursData)
         },
         UNLIKED:(state,action)=>{
             state.value-=1;
         },
         LEFTTOURS:(state,action)=>{
-            console.log(action.payload)
             state.toursData=action.payload
         },
         FILLTOURS:(state,action)=>{
             state.toursData=action.payload
         },
+        REMOVETOUR:(state,action)=>{
+            // console.log(action.payload)
+            const newTours = action.payload.tours.filter((tour) => {
+                return tour.id !== action.payload.id;
+              });
+            //   console.log(newTours)
+              state.toursData=newTours
+        }
     }
 })
 
-export const {LIKED,UNLIKED,LEFTTOURS,FILLTOURS}=countSlice.actions;
+export const {LIKED,UNLIKED,LEFTTOURS,FILLTOURS,REMOVETOUR}=countSlice.actions;
 export default countSlice.reducer;

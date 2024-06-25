@@ -10,14 +10,15 @@ const Tours = () => {
   const dispatch=useDispatch()
   // console.log(tours)
 
-
+/*
   function removeTour(id) {
     console.log(id)
     const newTours = tours.filter((tour) => {
       return tour.id !== id;
     });
     dispatch(LEFTTOURS(newTours))
-  } 
+  }
+    */ 
 
 
   if (tours.length === 0) {
@@ -37,7 +38,7 @@ const Tours = () => {
         <h1 className="innerplancont"> Plan With us...</h1>
         <div className="ToursCont2 ">
           {tours.map((tour) => {
-            return <Tour key={tour.id} tour={tour} removeTour={removeTour} />;
+            return <Tour key={tour.id} tour={tour}  />;
           })}
         </div>
       </div>
@@ -47,9 +48,4 @@ const Tours = () => {
 
 export default Tours;
 
-// git init
-// git add -A
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Divanshu02/Tour-Travel-webpage-using-redux.git
-// git push -u origin main
+
