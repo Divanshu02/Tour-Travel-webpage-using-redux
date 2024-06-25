@@ -1,0 +1,20 @@
+.liked_container{
+    /* border: 2px solid black; */
+    background-color: rgb(247, 233, 216);
+    height:max-content;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.liked_tour{
+    /* border: 2px solid red; */
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 2px 2px 4px gray ;
+    padding: .4em;
+}

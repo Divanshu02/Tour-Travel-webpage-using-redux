@@ -8,7 +8,7 @@ import { FILLTOURS } from "../Redux/Slices/countSlice.js";
 const Tours = () => {
   const tours=useSelector(state=>state.toursData)
   const dispatch=useDispatch()
-  console.log(tours)
+  // console.log(tours)
 
 /*
   function removeTour(id) {
@@ -26,7 +26,7 @@ const Tours = () => {
       <div className="ToursCont">
         <h1>No Tours Left</h1>
         <button className="ToursContbtn" onClick={()=>dispatch(FILLTOURS(data))} >
-          Refresh
+          Refresh 
         </button>
       </div>
     );

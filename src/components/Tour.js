@@ -8,9 +8,15 @@ import {  toast } from "react-toastify";
 const Tour = (props) => {
   const dispatch = useDispatch();
   const tours = useSelector((state) => state.toursData);
+  const likedArr=useSelector((state)=>state.likedArr)
+  let newTours = [];
+  likedArr.forEach((likedItem) => {
+    likedItem.forEach((tour) => {
+      newTours.push(tour);
+    });
+  });
   let { id, name, info, image, price, flag } = props.tour;
-  // console.log(tours)
-  return (
+  return ( 
     <div>
       <div className="random-cont">
         <div style={{ position: "relative" }}>
@@ -28,7 +34,7 @@ const Tour = (props) => {
                 dispatch(
                   UNLIKED({
                     id,
-                    tours,
+                    newTours,
                   })
                 );
                 toast.warn("Disliked Succefully")
