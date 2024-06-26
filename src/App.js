@@ -16,7 +16,7 @@ function App() {
             <div>
               <Tours />
             </div>
-          }
+          } 
         />
       </Routes>
     </>

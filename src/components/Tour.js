@@ -37,7 +37,7 @@ const Tour = (props) => {
                     newTours,
                   })
                 );
-                toast.warn("Disliked Succefully")
+                toast.warn("Removed from Saved Items")
               }}
             />
           ) : (
@@ -57,7 +57,7 @@ const Tour = (props) => {
                     tours,
                   })
                 );
-                toast.success("Liked Successfully")
+                toast.success("Saved Successfully")
               }}
             />
           )}
